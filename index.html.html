@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Premsai RN – DevOps Engineer | AWS, Kubernetes, Terraform, CI/CD</title>
+<meta name="description" content="Premsai RN is a DevOps Engineer in Chennai with 4+ years of experience in AWS, CI/CD (Jenkins, GitHub Actions), CloudFormation, Docker, Kubernetes, observability and SOC 2 compliance.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Premsai RN","jobTitle":"DevOps Engineer","email":"connectpremrn18@gmail.com","telephone":"+919600033970","url":"https://www.linkedin.com/in/premsairn/","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressCountry":"IN"},"worksFor":{"@type":"Organization","name":"Beroe Inc"},"knowsAbout":["AWS","CI/CD","Jenkins","Terraform","CloudFormation","Docker","Kubernetes","Prometheus","Grafana","OpenSearch"]}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f2f5f8;--surface:#fff;--ink:#14213d;--muted:#51607a;--line:#d5dde7;--accent:#0a6a94;--accent-ink:#fff;--run:#c77d00;--ok:#1a7f4b;--soft:#e4eef5;
+--display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0d1524;--surface:#152238;--ink:#e8eef7;--muted:#9fb0c8;--line:#27395a;--accent:#5cc0ea;--accent-ink:#06212e;--run:#f0b44a;--ok:#5fd39a;--soft:#1b2e4a}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0d1524;--surface:#152238;--ink:#e8eef7;--muted:#9fb0c8;--line:#27395a;--accent:#5cc0ea;--accent-ink:#06212e;--run:#f0b44a;--ok:#5fd39a;--soft:#1b2e4a}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:30}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--run);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:18px;min-height:58px;overflow-x:auto}
+.nav b{font:800 1.1rem var(--display);white-space:nowrap;margin-right:auto}
+.nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem;white-space:nowrap}
+.nav a:hover{color:var(--accent)}
+.nav button{font:inherit;background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:800;letter-spacing:-.03em}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:700;letter-spacing:-.02em;margin-bottom:22px}
+h3{font-size:1.2rem;font-weight:700}
+section{padding:56px 0}
+.hero{padding:56px 0 40px}
+.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:start}
+.role{font:600 1.35rem var(--display);color:var(--accent);margin:10px 0 16px}
+.lead{max-width:60ch;color:var(--muted)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 8px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;border:2px solid var(--accent);font-weight:600;text-decoration:none;color:var(--accent);background:transparent;cursor:pointer;font-family:var(--body);font-size:1rem}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.meta{color:var(--muted);font-size:.95rem}
+.pipe{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.pipe h2{font-size:1.15rem;margin-bottom:4px}
+.pipe p.hint{margin:0 0 14px;color:var(--muted);font-size:.92rem}
+.stages{display:flex;gap:0;margin:0 0 16px;padding:0;list-style:none}
+.stages li{flex:1;position:relative}
+.stages li+li::before{content:"";position:absolute;left:-50%;right:50%;top:19px;height:3px;background:var(--line)}
+.stages li.done+li::before,.stages li.on::before{background:var(--ok)}
+.stages button{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:6px;width:100%;background:none;border:0;cursor:pointer;color:var(--muted);font:500 .78rem var(--body);padding:0}
+.stages i{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:3px solid var(--line);background:var(--surface);font:700 .95rem var(--display);font-style:normal;color:var(--muted)}
+.stages .done i{border-color:var(--ok);color:var(--ok)}
+.stages .on i{border-color:var(--run);background:var(--run);color:#14213d}
+.stages .on button{color:var(--ink);font-weight:600}
+.panel h3{margin-bottom:6px;font-size:1.05rem}
+.panel ul{margin:8px 0 0;padding-left:20px;font-size:.97rem}
+.panel .tools{color:var(--accent);font-weight:600;font-size:.9rem;margin:0}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;padding:14px 16px}
+.facts strong{display:block;font:800 1.5rem var(--display)}
+.facts span{color:var(--muted);font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.chip{font:500 .92rem var(--body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:20px}
+.job header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin-bottom:10px}
+.job .co{color:var(--muted);margin:2px 0 0}
+.job time{color:var(--muted);font-weight:500}
+.job ul{margin:0;padding-left:20px;max-width:90ch}
+.job li{margin:9px 0}
+.job li[hidden]{display:none}
+.count{color:var(--muted);font-size:.93rem;margin:-10px 0 18px}
+.skills-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+.skills-top input{flex:1;min-width:220px;padding:10px 14px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);font:inherit}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.sk div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.sk h3{font-size:1rem;margin-bottom:8px}
+.sk ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.sk li{background:var(--soft);border-radius:6px;padding:3px 10px;font-size:.92rem}
+.sk li.hit{background:var(--run);color:#14213d;font-weight:600}
+.sk li.dim{opacity:.35}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.certs{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.certs li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px;display:flex;gap:10px}
+.certs li::before{content:"\2713";color:var(--ok);font-weight:800}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:32px}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;margin:16px 0 0}
+.contact dt{color:var(--muted)}.contact dd{margin:0;font-weight:500}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem;text-align:center}
+@media (max-width:820px){.hero .grid{grid-template-columns:1fr}.nav a.hide{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.nav,.pipe,.chips,.skills-top,.cta,footer{display:none!important}body{background:#fff;color:#000;font-size:10.5pt}section{padding:14px 0}.job,.sk div,.facts li,.certs li,.contact{border-color:#999;background:#fff;break-inside:avoid}li[hidden]{display:list-item!important}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+<b>Premsai RN</b>
+<a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#certs" class="hide">Certifications</a><a href="#contact">Contact</a>
+<button id="theme" type="button" aria-label="Toggle light or dark theme">Theme</button>
+</div></header>
+
+<main>
+<section class="hero" id="top"><div class="wrap grid">
+<div>
+<h1>Premsai RN</h1>
+<p class="role">DevOps Engineer</p>
+<p class="lead">I have 4+ years of experience building and running highly available AWS environments. I design secure deployment pipelines, automate infrastructure as code, monitor production, and cut cloud costs.</p>
+<div class="cta">
+<a class="btn primary" href="mailto:connectpremrn18@gmail.com">Email me</a>
+<a class="btn" href="https://www.linkedin.com/in/premsairn/" rel="noopener">LinkedIn profile</a>
+<button class="btn" type="button" onclick="window.print()">Save as PDF</button>
+</div>
+</div>
+
+<div class="pipe" aria-labelledby="pipeh">
+<h2 id="pipeh">How I ship and run software</h2>
+<p class="hint">Select a stage to see what I own.</p>
+<ol class="stages" id="stages">
+<li><button type="button" data-i="0"><i>1</i>Commit</button></li>
+<li><button type="button" data-i="1"><i>2</i>Build</button></li>
+<li><button type="button" data-i="2"><i>3</i>Deploy</button></li>
+<li><button type="button" data-i="3"><i>4</i>Observe</button></li>
+<li><button type="button" data-i="4"><i>5</i>Protect</button></li>
+</ol>
+<div class="panel" id="p0"><h3>Commit: quality gates on every PR</h3><p class="tools">GitHub · Bitbucket</p><ul><li>GitHub PR workflows with branch-specific unit test pipelines</li><li>Automated validation and consistent code quality checks before merge</li></ul></div>
+<div class="panel" id="p1" hidden><h3>Build: Jenkins pipelines, containers</h3><p class="tools">Jenkins · GitHub Actions · Docker</p><ul><li>End-to-end Jenkins CI/CD integrated with GitHub and Bitbucket</li><li>Containerized microservices with Docker Compose and Kubernetes</li></ul></div>
+<div class="panel" id="p2" hidden><h3>Deploy: repeatable and reversible</h3><p class="tools">AWS CodeDeploy · CloudFormation · ALB</p><ul><li>Parameterized CloudFormation for consistent Dev, Stage and Production</li><li>Release lifecycle with rollback mechanisms and validation checks</li><li>ALB target groups and listener rules for public traffic routing</li></ul></div>
+<div class="panel" id="p3" hidden><h3>Observe: detect early, fix fast</h3><p class="tools">Prometheus · Grafana · Alertmanager · OpenSearch</p><ul><li>Metrics, alerting and automated remediation to reduce MTTR</li><li>Logstash to OpenSearch logging pipeline with Kibana dashboards</li><li>CloudWatch alarms with SNS email alerts</li></ul></div>
+<div class="panel" id="p4" hidden><h3>Protect: secure, compliant, cost-aware</h3><p class="tools">AWS WAF · Inspector · Cost Explorer · SOC 2</p><ul><li>WAF Web ACLs and Inspector scans with Critical/High findings fixed</li><li>Cost Anomaly Detection, tagged reports and budget alerts</li><li>ISMS and SOC 2 documentation and runbooks</li></ul></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Technical skills</h2>
+<div class="skills-top"><input id="q" type="search" placeholder="Search a tool, e.g. Terraform, Prometheus, WAF" aria-label="Search skills"><span class="meta" id="qres" aria-live="polite"></span></div>
+<div class="sk" id="sk">
+<div><h3>CI/CD</h3><ul><li>Jenkins</li><li>GitHub Actions</li><li>AWS CodeDeploy</li></ul></div>
+<div><h3>Infrastructure as Code</h3><ul><li>Terraform</li><li>AWS CloudFormation</li></ul></div>
+<div><h3>Containers and orchestration</h3><ul><li>Docker</li><li>Kubernetes</li></ul></div>
+<div><h3>AWS services</h3><ul><li>EC2</li><li>ECS</li><li>S3</li><li>VPC</li><li>IAM</li><li>ALB</li><li>RDS</li><li>ECR</li><li>Lambda</li><li>Route 53</li><li>SNS</li><li>EventBridge</li><li>SES</li></ul></div>
+<div><h3>Monitoring and observability</h3><ul><li>Amazon CloudWatch</li><li>Prometheus</li><li>Grafana</li><li>Alertmanager</li></ul></div>
+<div><h3>Logging and analytics</h3><ul><li>Logstash</li><li>Elasticsearch</li><li>OpenSearch</li><li>Kibana</li></ul></div>
+<div><h3>Security and compliance</h3><ul><li>AWS WAF</li><li>Amazon Inspector</li><li>SentinelOne</li><li>ISMS</li><li>SOC 2</li></ul></div>
+<div><h3>Operating systems</h3><ul><li>Amazon Linux 2</li><li>Amazon Linux 2023</li><li>Ubuntu</li><li>Windows</li></ul></div>
+<div><h3>Scripting and version control</h3><ul><li>Bash</li><li>Python</li><li>GitHub</li><li>Bitbucket</li></ul></div>
+<div><h3>ITSM and collaboration</h3><ul><li>JIRA</li><li>ServiceNow</li><li>Confluence</li></ul></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Work experience</h2>
+<div class="chips" id="chips" role="group" aria-label="Filter achievements by topic">
+<button class="chip" type="button" aria-pressed="true" data-t="all">All</button>
+<button class="chip" type="button" aria-pressed="false" data-t="cicd">CI/CD</button>
+<button class="chip" type="button" aria-pressed="false" data-t="iac">Infrastructure as Code</button>
+<button class="chip" type="button" aria-pressed="false" data-t="containers">Containers</button>
+<button class="chip" type="button" aria-pressed="false" data-t="observability">Monitoring and logging</button>
+<button class="chip" type="button" aria-pressed="false" data-t="security">Security and compliance</button>
+<button class="chip" type="button" aria-pressed="false" data-t="migration">Upgrades and migrations</button>
+<button class="chip" type="button" aria-pressed="false" data-t="cost">Automation and cost</button>
+</div>
+<p class="count" id="count" aria-live="polite"></p>
+
+<article class="job">
+<header><div><h3>DevOps Engineer</h3><p class="co">Beroe Inc, Chennai</p></div><time>April 2024 – Present</time></header>
+<ul>
+<li data-t="cicd">Designed and implemented end-to-end Jenkins CI/CD pipelines integrated with GitHub and Bitbucket, orchestrating AWS CodeDeploy deployments for automated application delivery.</li>
+<li data-t="cicd">Owned production deployment and release lifecycle, with rollback mechanisms and validation checks to keep availability high.</li>
+<li data-t="cicd">Designed and enforced GitHub PR workflows with branch-specific unit test pipelines as automated code quality gates.</li>
+<li data-t="iac">Provisioned core AWS infrastructure with parameterized CloudFormation templates for consistent, repeatable Dev, Stage and Production environments.</li>
+<li data-t="containers">Built and deployed containerized microservices with Docker Compose and Kubernetes, and configured AWS ALB target groups and listener rules to expose applications publicly.</li>
+<li data-t="observability">Built a monitoring and alerting solution with Prometheus, Alertmanager and Grafana, including automated remediation to reduce MTTR and manual intervention.</li>
+<li data-t="observability">Implemented a logging pipeline with Logstash for ingestion, OpenSearch for distributed indexing, and Kibana/OpenSearch Dashboards for real-time visualization.</li>
+<li data-t="migration">Led Amazon RDS MySQL engine upgrades across Dev, Stage and Production with zero data loss and compatibility validation.</li>
+<li data-t="migration">Upgraded OpenSearch domains across multi-tier environments using blue-green deployment for zero-downtime availability.</li>
+<li data-t="migration">Architected and migrated application servers from Amazon Linux 2 to Amazon Linux 2023, with rollback strategies and pre/post-migration validation.</li>
+<li data-t="cost">Optimized AWS spend using Cost Anomaly Detection, environment-tagged Cost Explorer reports, budget alerts and periodic resource cleanup.</li>
+<li data-t="security">Drove ISMS and SOC 2 compliance through control-aligned documentation and runbooks for disaster recovery, change and incident management.</li>
+<li data-t="security cost">Primary point of contact for AWS Support escalations, including resource deprecation and upgrade queries, enabling seamless releases.</li>
+<li data-t="cost">Ran scheduled monthly restarts of microservices across multiple production environments to maintain stability and availability.</li>
+</ul>
+</article>
+
+<article class="job">
+<header><div><h3>Assistant System Engineer (DevOps)</h3><p class="co">Tata Consultancy Services, Chennai</p></div><time>July 2022 – April 2024</time></header>
+<ul>
+<li data-t="cost">Automated cron jobs for disk cleanup and report generation, and AWS Lambda functions for EC2 and RDS start/stop scheduling to cut cost and improve resource use.</li>
+<li data-t="observability">Installed and configured the CloudWatch Agent across production, with custom metrics, threshold-based alarms and SNS email alerts.</li>
+<li data-t="observability">Monitored CloudWatch alarms and worked across teams on root cause analysis and corrective actions to keep infrastructure stable.</li>
+<li data-t="security">Ran Amazon Inspector scans on EC2, remediated Critical/High findings through package upgrades, and carried out web application security assessments.</li>
+<li data-t="security">Designed and managed AWS WAF Web ACLs for ALBs, with custom rule groups for API access control and blocking unauthorized traffic.</li>
+<li data-t="migration">Executed MySQL backup/restore across environments and migrated OpenSearch indexes between clusters using snapshot repositories.</li>
+<li data-t="cost">Wrote and maintained Confluence runbooks and SOPs to standardize DevOps processes and share knowledge.</li>
+</ul>
+</article>
+</div></section>
+
+<section id="certs"><div class="wrap two">
+<div><h2>Certifications</h2>
+<ul class="certs">
+<li>AWS Certified Solutions Architect – Associate</li>
+<li>AWS Certified Cloud Practitioner</li>
+<li>Google Cloud Certified Associate Cloud Engineer</li>
+<li>Google Cloud Certified Cloud Digital Leader</li>
+<li>Microsoft Certified: Azure Fundamentals</li>
+<li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
+</ul></div>
+<div><h2>Education</h2>
+<div class="job"><h3>B.E. Electronics and Communication Engineering</h3><p class="co">Rajalakshmi Institute of Technology</p><p class="meta" style="margin:6px 0 0">2018 – 2022 · CGPA 7.81</p></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+<h2>Contact details</h2>
+<dl>
+<dt>Email</dt><dd><a href="mailto:connectpremrn18@gmail.com">connectpremrn18@gmail.com</a></dd>
+<dt>Phone</dt><dd><a href="tel:+919600033970">+91 96000 33970</a></dd>
+<dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/premsairn/" rel="noopener">linkedin.com/in/premsairn</a></dd>
+<dt>Location</dt><dd>Chennai, Tamil Nadu, India</dd>
+</dl></div></div></section>
+</main>
+
+<script>
+(function(){
+var stages=[].slice.call(document.querySelectorAll('#stages li')),cur=0,auto=true,timer;
+function show(i){cur=i;stages.forEach(function(li,k){li.className=k<i?'done':(k===i?'on':'');li.firstElementChild.setAttribute('aria-current',k===i?'step':'false')});
+for(var k=0;k<5;k++){document.getElementById('p'+k).hidden=(k!==i)}}
+stages.forEach(function(li,k){li.firstElementChild.addEventListener('click',function(){auto=false;clearTimeout(timer);show(k)})});
+show(0);
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){(function step(){if(!auto||cur>=4)return;timer=setTimeout(function(){if(auto){show(cur+1);step()}},1800)})()}
+
+var chips=[].slice.call(document.querySelectorAll('.chip')),items=[].slice.call(document.querySelectorAll('.job li')),count=document.getElementById('count');
+chips.forEach(function(c){c.addEventListener('click',function(){
+chips.forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});
+var t=c.getAttribute('data-t'),n=0;
+items.forEach(function(li){var show=t==='all'||(' '+li.getAttribute('data-t')+' ').indexOf(' '+t+' ')>-1;li.hidden=!show;if(show)n++});
+count.textContent=t==='all'?'':'Showing '+n+' of '+items.length+' achievements: '+c.textContent}) });
+
+var tags=[].slice.call(document.querySelectorAll('#sk li')),qres=document.getElementById('qres');
+document.getElementById('q').addEventListener('input',function(e){
+var v=e.target.value.trim().toLowerCase(),n=0;
+tags.forEach(function(li){li.className='';if(v){if(li.textContent.toLowerCase().indexOf(v)>-1){li.className='hit';n++}else li.className='dim'}});
+qres.textContent=v?(n?n+' match'+(n>1?'es':''):'No match in my skill list'):''});
+
+var root=document.documentElement,btn=document.getElementById('theme');
+btn.addEventListener('click',function(){var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;root.setAttribute('data-theme',dark?'light':'dark')});
+})();
+</script>
+</body>
+</html>
